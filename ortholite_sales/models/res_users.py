@@ -20,4 +20,4 @@ class SaleOrderLine(models.Model):
 
     def _compute_is_change_unit_price(self):
         for rec in self:
-        rec.is_change_unit_price = self.env.user.is_change_unit_price_so
+            rec.is_change_unit_price = self.env.user.is_change_unit_price_so
